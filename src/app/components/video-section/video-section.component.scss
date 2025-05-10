@@ -1,0 +1,61 @@
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #FDFBF7; /* Optional for outer background */
+}
+
+.video-container {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.video-heading { 
+  color: #CFAE62;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+video {
+  flex: 1 1 250px;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  width: 600px;
+}
+
+@media (max-width: 642px) and (min-width: 530px) {
+    video{
+        width: 500px !important;
+    }
+}
+
+@media (max-width: 530px) and (min-width: 475px) {
+    video{
+        width: 450px !important;
+    }
+}
+
+@media (max-width: 474px) and (min-width: 410px) {
+    video{
+        width: 400px !important;
+    }
+}
+
+@media (max-width: 409px) and (min-width: 380px) {
+    video{
+        width: 350px !important;
+    }
+}
+
+@media (max-width: 379px) and (min-width: 200px) {
+    video{
+        width: 250px !important;
+    }
+}
+

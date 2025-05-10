@@ -1,0 +1,31 @@
+.floating-icon {
+  position: fixed;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: transform 0.3s;
+}
+
+.floating-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+.floating-icon:hover {
+  transform: scale(1.1);
+}
+
+.floating-icon.whatsapp {
+  right: 20px;
+}
+
+.floating-icon.contact {
+  left: 20px;
+}

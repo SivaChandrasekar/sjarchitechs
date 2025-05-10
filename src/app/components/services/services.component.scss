@@ -1,0 +1,39 @@
+.services {
+  padding: 4rem 1rem;
+  background-color: #FDFBF7;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2rem;
+  color: #1C1C1C;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service {
+  flex: 1 1 250px;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service i {
+  font-size: 2rem;
+  color: #CFAE62;
+  margin-bottom: 1rem;
+}
