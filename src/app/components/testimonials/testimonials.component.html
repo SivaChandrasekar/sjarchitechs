@@ -1,1 +1,30 @@
-<p>testimonials works!</p>
+<section id="testimonials" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">What Our Clients Say</h2>
+    
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="zoom-in">
+      <div class="carousel-inner">
+        <div 
+          class="carousel-item" 
+          *ngFor="let testimonial of testimonials; let i = index" 
+          [class.active]="i === 0">
+          
+          <div class="card mx-auto shadow" style="max-width: 600px;">
+            <div class="card-body text-center p-4">
+              <p class="card-text mb-4">“{{ testimonial.feedback }}”</p>
+              <h6 class="mb-0">{{ testimonial.name }}</h6>
+              <small class="text-muted">{{ testimonial.position }}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>

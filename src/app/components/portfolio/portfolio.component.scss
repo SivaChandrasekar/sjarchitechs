@@ -30,3 +30,7 @@
 .portfolio-gallery img:hover {
   transform: scale(1.05);
 }
+
+.modal-backdrop.show {
+  background-color: rgba(0, 0, 0, 0.7); /* Gray overlay */
+}
