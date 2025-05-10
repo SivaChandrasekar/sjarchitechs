@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Offcanvas } from 'bootstrap'
 @Component({
   selector: 'app-header',
   imports: [],
@@ -7,15 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  menuVisible = false;
-
-  toggleMenu() {
-    this.menuVisible = !this.menuVisible;
-  }
+  @ViewChild('offcanvasNavbar', { static: false }) offcanvasElement!: ElementRef;
+  
+  closeNavbar() {
+ const element = this.offcanvasElement?.nativeElement;
+    if (element) {
+      const bsOffcanvas = Offcanvas.getInstance(element) || new Offcanvas(element);
+      bsOffcanvas.hide();
+}
 
   
+}
 
-  // closeMenu() {
-  //   this.menuVisible = false;
-  // }
 }
