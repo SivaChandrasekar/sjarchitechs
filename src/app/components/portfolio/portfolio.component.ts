@@ -59,7 +59,7 @@ projects = [
     images: [
     'assets/interior05.jpg',
     'assets/interior06.jpg',
-    'assets/interior07.jpg'
+    'assets/interior07.jpeg'
     ]
   },
   {
@@ -68,7 +68,7 @@ projects = [
     description: 'Beach-facing property with wooden finish and open-plan design.',
     images: [
     'assets/interior06.jpg',
-    'assets/interior07.jpg',
+    'assets/interior07.jpeg',
     'assets/interior08.jpg'
     ]
   },
@@ -77,7 +77,7 @@ projects = [
     image: '../../../assets/interior07.jpeg',
     description: 'Traditional-inspired design fused with modern comfort.',
     images: [
-    'assets/interior07.jpg',
+    'assets/interior07.jpeg',
     'assets/interior08.jpg',
     'assets/interior09.jpg'
     ]
